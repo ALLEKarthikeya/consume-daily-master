@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Create a Blog Post
+    form(action="/create-blog", method="POST")
+        label(for="title") Title:
+        input(type="text", name="title")
+        br
+        label(for="content") Content:
+        textarea(name="content", rows="10", cols="50", style="border: none; outline: none; resize: none; background: none; padding: 5px;")
+        br
+        button(type="submit") post
